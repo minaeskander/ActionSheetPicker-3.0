@@ -157,6 +157,7 @@
 - (UIView *)configuredPickerView {
     CGRect datePickerFrame = CGRectMake(0, 40, self.viewSize.width, 216);
     UIDatePicker *datePicker = [[UIDatePicker alloc] initWithFrame:datePickerFrame];
+    [datePicker setPreferredDatePickerStyle:UIDatePickerStyleWheels];
     datePicker.datePickerMode = self.datePickerMode;
     datePicker.maximumDate = self.maximumDate;
     datePicker.minimumDate = self.minimumDate;
